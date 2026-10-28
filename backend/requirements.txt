@@ -1,0 +1,11 @@
+# Deep learning: building and training the CNN
+torch>=2.2
+torchvision>=0.17
+
+# Web API
+Flask>=3.0
+flask-cors>=4.0
+
+# Image handling and numeric arrays
+Pillow>=10.0
+numpy>=1.26

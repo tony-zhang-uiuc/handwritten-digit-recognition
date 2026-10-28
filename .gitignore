@@ -1,0 +1,35 @@
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables (may contain secrets)
+.env
+.env.*
+
+# ----- Model / data artifacts -----
+# Trained weights and downloaded datasets are large; regenerate them instead of committing.
+backend/model/*.pt
+backend/model/*.pth
+backend/data/
+data/
+
+# ----- Node / React (Vite) -----
+node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ----- Editors and OS -----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
