@@ -12,12 +12,13 @@ env/
 # Environment variables (may contain secrets)
 .env
 .env.*
+!.env.example
 
 # ----- Model / data artifacts -----
 # Trained weights and downloaded datasets are large; regenerate them instead of committing.
-backend/model/*.pt
-backend/model/*.pth
-backend/data/
+backend/model/checkpoints/
+*.pt
+*.pth
 data/
 
 # ----- Node / React (Vite) -----
@@ -28,8 +29,17 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# ----- Logs, caches, and test output -----
+*.log
+.coverage
+htmlcov/
+.cache/
+*.tmp
+
 # ----- Editors and OS -----
 .vscode/
 .idea/
+*.swp
 .DS_Store
 Thumbs.db
+desktop.ini
